@@ -61,4 +61,4 @@ LUCI_DEPENDS:=+shadowsocksr-libev-alt +ipset +ip-full +iptables-mod-tproxy +dnsm
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
-call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - OpenWrt buildroot signature
