@@ -26,10 +26,10 @@ msgid "Global Server"
 msgstr "全局服务器"
 
 msgid "ShadowSocksR SOCK5 Proxy is running"
-msgstr "ShadowSocksR SOCK5代理运行中"
+msgstr "ShadowSocksR SOCK5 代理运行中"
 
 msgid "UDP Relay Server"
-msgstr "UDP中继服务器"
+msgstr "UDP 中继服务器"
 
 msgid "Same as Global Server"
 msgstr "与全局服务器相同"
@@ -61,35 +61,160 @@ msgstr "密码"
 msgid "Encrypt Method"
 msgstr "加密方式"
 
+msgid "Enable the SUoT protocol, requires server support."
+msgstr "启用 SUoT 协议，需要服务端支持。"
+
+msgid "Bloom Filter"
+msgstr "布隆过滤器"
+
 msgid "VLESS Encryption"
 msgstr "VLESS 加密"
 
+msgid "Socks Version"
+msgstr "Socks 版本"
+
 msgid "Flow"
-msgstr "流控 (Flow)"
+msgstr "流控（Flow）"
 
 msgid "Transport"
+msgstr "传输协议"
+
+msgid "Transport Protocol"
 msgstr "传输协议"
 
 msgid "Protocol"
 msgstr "传输协议"
 
+msgid "TLS Host"
+msgstr "TLS 主机名"
+
 msgid "allowInsecure"
 msgstr "允许不安全连接"
 
-msgid "Concurrency"
-msgstr "最大并发连接数"
+
+msgid "concurrency"
+msgstr "TCP 最大并发连接数"
+
+msgid "xudpConcurrency"
+msgstr "UDP 最大并发连接数"
+
+msgid "xudpProxyUDP443"
+msgstr "对被代理的 UDP/443 流量处理方式"
+
+
+msgid "custom_tcpcongestion"
+msgstr "连接服务器节点的 TCP 拥塞控制算法"
+
+msgid "comment_tcpcongestion_disable"
+msgstr "系统默认值"
+
 
 msgid "If true, allowss insecure connection at TLS client, e.g., TLS server uses unverifiable certificates."
 msgstr "是否允许不安全连接。当选择时，将不会检查远端主机所提供的 TLS 证书的有效性。"
 
-msgid "Protocol param(optional)"
+msgid "Protocol param (optional)"
 msgstr "传输协议参数（可选）"
 
 msgid "Obfs"
 msgstr "混淆插件"
 
-msgid "Obfs param(optional)"
+msgid "Obfs param (optional)"
 msgstr "混淆参数（可选）"
+
+msgid "Authentication type"
+msgstr "验证类型"
+
+msgid "Users Authentication"
+msgstr "用户验证"
+
+msgid "NOTE: If the server uses the userpass authentication, the format must be username:password."
+msgstr "注意： 如果服务器使用 userpass 验证，格式必须是 username:password。"
+
+msgid "Enable Port Hopping"
+msgstr "启用端口跃迁"
+
+msgid "Enable Transport Protocol Settings"
+msgstr "启用传输协议设置"
+
+msgid "Port Range"
+msgstr "端口范围值"
+
+msgid "Port Hopping Interval(Unit:Second)"
+msgstr "端口跃迁间隔（单位：秒）"
+
+msgid "Enable Lazy Mode"
+msgstr "启用懒狗模式"
+
+msgid "Enable Obfuscation"
+msgstr "启用混淆功能"
+
+msgid "Obfuscation Type"
+msgstr "混淆类型"
+
+msgid "Obfuscation Password"
+msgstr "混淆密码"
+
+msgid "Hysterir QUIC parameters"
+msgstr "QUIC 参数"
+
+msgid "QUIC initStreamReceiveWindow"
+msgstr "QUIC 初始流接收窗口大小。"
+
+msgid "QUIC maxStreamReceiveWindow"
+msgstr "QUIC 最大的流接收窗口大小"
+
+msgid "QUIC initConnReceiveWindow"
+msgstr "QUIC 初始的连接接收窗口大小"
+
+msgid "QUIC maxConnReceiveWindow"
+msgstr "QUIC 最大的连接接收窗口大小"
+
+msgid "QUIC maxIdleTimeout(Unit:second)"
+msgstr "QUIC 最长空闲超时时间（单位：秒）"
+
+msgid "The keep-alive period.(Unit:second)"
+msgstr "心跳包发送间隔（单位：秒）"
+
+
+msgid "Certificate fingerprint"
+msgstr "证书指纹"
+
+msgid "shadowTLS protocol Version"
+msgstr "ShadowTLS协议版本"
+
+msgid "TLS 1.3 Strict mode"
+msgstr "TLS 1.3 限定模式"
+
+msgid "Disable TCP No_delay"
+msgstr "禁用TCP无延迟"
+
+msgid "shadow-TLS SNI"
+msgstr "服务器名称指示"
+
+msgid "Shadow-TLS ChainPoxy type"
+msgstr "代理链类型"
+
+msgid "Shadowsocks-rust Version"
+msgstr "shadowsocks rust 版本"
+
+msgid "Vmess Protocol"
+msgstr "VMESS协议"
+
+msgid "Shadowsocks password"
+msgstr "shadowsocks密码"
+
+msgid "QUIC connection receive window"
+msgstr "QUIC 连接接收窗口"
+
+msgid "QUIC stream receive window"
+msgstr "QUIC 流接收窗口"
+
+
+msgid "Lazy Start"
+msgstr "延迟启动"
+
+msgid "Disable QUIC path MTU discovery"
+msgstr "禁用 QUIC 启用 MTU 探测"
 
 msgid "Enable Tunnel(DNS)"
 msgstr "启用隧道（DNS）转发"
@@ -107,16 +232,16 @@ msgid "Interfaces - WAN"
 msgstr "接口 - WAN"
 
 msgid "Bypassed IP List"
-msgstr "被忽略IP列表"
+msgstr "被忽略 IP 列表"
 
 msgid "NULL - As Global Proxy"
 msgstr "留空 - 作为全局代理"
 
 msgid "Bypassed IP"
-msgstr "额外被忽略IP"
+msgstr "额外被忽略 IP"
 
 msgid "Forwarded IP"
-msgstr "强制走代理IP"
+msgstr "强制走代理 IP"
 
 msgid "Interfaces - LAN"
 msgstr "接口 - LAN"
@@ -179,7 +304,7 @@ msgid "Server"
 msgstr "服务器"
 
 msgid "TCP Fast Open"
-msgstr "TCP快速打开"
+msgstr "TCP 快速打开"
 
 msgid "Status"
 msgstr "状态"
@@ -191,10 +316,10 @@ msgid "Running Status"
 msgstr "运行状态"
 
 msgid "Global Client"
-msgstr "TCP透明代理"
+msgstr "TCP 透明代理"
 
 msgid "Global SSR Server"
-msgstr "SSR服务端"
+msgstr "SSR 服务端"
 
 msgid "DNS Tunnel"
 msgstr "DNS 隧道"
@@ -227,10 +352,10 @@ msgid "Running Mode"
 msgstr "运行模式"
 
 msgid "IP Route Mode"
-msgstr "绕过中国大陆IP模式"
+msgstr "绕过中国大陆 IP 模式"
 
 msgid "GFW List Mode"
-msgstr "GFW列表模式"
+msgstr "GFW 列表模式"
 
 msgid "Global Mode"
 msgstr "全局模式"
@@ -251,7 +376,7 @@ msgid "Forwarded Proxy"
 msgstr "强制走代理"
 
 msgid "UDP Relay"
-msgstr "UDP中继"
+msgstr "UDP 中继"
 
 msgid "Google Connectivity"
 msgstr "【谷歌】连通性检查"
@@ -272,19 +397,19 @@ msgid "Connect Error"
 msgstr "连接错误"
 
 msgid "Check..."
-msgstr "正在检查.."
+msgstr "正在检查..."
 
 msgid "Proxy Check"
 msgstr "代理检查"
 
 msgid "GFW List Data"
-msgstr "【GFW列表】数据库"
+msgstr "【GFW 列表】数据库"
 
 msgid "China IP Data"
-msgstr "【国内IP段】数据库"
+msgstr "【中国大陆 IP 段】数据库"
 
 msgid "Netflix IP Data"
-msgstr "【Netflix IP段】数据库"
+msgstr "【Netflix IP 段】数据库"
 
 msgid "Advertising Data"
 msgstr "【广告屏蔽】数据库"
@@ -296,7 +421,7 @@ msgid "Refresh Data"
 msgstr "更新数据库"
 
 msgid "Refresh..."
-msgstr "正在更新，请稍候.."
+msgstr "正在更新，请稍候..."
 
 msgid "Refresh OK!"
 msgstr "更新成功！"
@@ -338,46 +463,43 @@ msgid "Enable adblock"
 msgstr "启用广告屏蔽"
 
 msgid "adblock_url"
-msgstr "广告屏蔽更新URL"
+msgstr "广告屏蔽更新 URL"
 
 msgid "gfwlist Update url"
-msgstr "GFWList更新URL"
+msgstr "GFW 列表更新 URL"
 
 msgid "Chnroute Update url"
-msgstr "国内IP段更新URL"
+msgstr "中国大陆 IP 段更新 URL"
 
 msgid "nfip_url"
-msgstr "Netflix IP段更新URL"
+msgstr "Netflix IP 段更新 URL"
 
 msgid "Customize Netflix IP Url"
-msgstr "自定义Netflix IP更新URL（默认项目地址：https://github.com/QiuSimons/Netflix_IP）"
+msgstr "自定义 Netflix IP 段更新 URL（默认项目地址：https://github.com/QiuSimons/Netflix_IP）"
 
 msgid "Enable Process Deamon"
 msgstr "启用进程自动守护"
 
 msgid "DNS Server IP and Port"
-msgstr "DNS服务器地址和端口"
+msgstr "DNS 服务器地址和端口"
 
 msgid "Resolve Dns Mode"
-msgstr "DNS解析方式"
+msgstr "DNS 解析方式"
 
 msgid "Use SSR DNS Tunnel"
-msgstr "使用SSR-DNS隧道"
-
-msgid "Use Pdnsd"
-msgstr "使用Pdnsd"
+msgstr "使用 SSR DNS 隧道"
 
 msgid "DNS Anti-pollution"
 msgstr "DNS 防污染服务"
 
 msgid "Use Other DNS Tunnel(Need to install)"
-msgstr "使用其他DNS转发(需要自己安装)"
+msgstr "使用其他 DNS 转发（需要自己安装）"
 
 msgid "Import"
 msgstr "导入配置信息"
 
 msgid "Export SSR"
-msgstr "导出ssr配置信息"
+msgstr "导出 SSR 配置信息"
 
 msgid "Import configuration information successfully."
 msgstr "导入配置信息成功。"
@@ -392,10 +514,10 @@ msgid "Paste sharing link here"
 msgstr "在此处粘贴分享链接"
 
 msgid "Unable to copy SSR to clipboard."
-msgstr "无法复制SSR网址到剪贴板。"
+msgstr "无法复制 SSR 网址到剪贴板。"
 
 msgid "Copy SSR to clipboard successfully."
-msgstr "成功复制SSR网址到剪贴板。"
+msgstr "成功复制 SSR 网址到剪贴板。"
 
 msgid "Servers Manage"
 msgstr "服务器管理"
@@ -407,40 +529,73 @@ msgid "Through proxy update"
 msgstr "通过代理更新"
 
 msgid "GFW List"
-msgstr "GFW列表"
+msgstr "GFW 列表"
 
 msgid "ShadowSocksR Plus+ Settings"
 msgstr "ShadowSocksR Plus+ 设置"
 
 msgid "<h3>Support SS/SSR/V2RAY/XRAY/TROJAN/NAIVEPROXY/SOCKS5/TUN etc.</h3>"
-msgstr "<h3>支持 SS/SSR/V2RAY/XRAY/TROJAN/NAIVEPROXY/SOCKS5/TUN 等协议</h3>"
+msgstr "<h3>支持 SS/SSR/V2RAY/XRAY/TROJAN/NAIVEPROXY/SOCKS5/TUN 等协议。</h3>"
 
 msgid "Main Server"
 msgstr "主服务器"
 
 msgid "Anti-pollution DNS Server"
-msgstr "访问国外域名DNS服务器"
+msgstr "访问国外域名 DNS 服务器"
 
 msgid "Custom DNS Server format as IP:PORT (default: 8.8.4.4:53)"
-msgstr "格式为 IP:PORT (默认: 8.8.4.4:53)"
+msgstr "格式为 IP:Port（默认：8.8.4.4:53）"
 
-msgid "Use Pdnsd tcp query and cache"
-msgstr "使用PDNSD TCP查询并缓存"
+msgid "Use DNS2TCP query"
+msgstr "使用 DNS2TCP 查询"
 
 msgid "Use DNS2SOCKS query and cache"
 msgstr "使用 DNS2SOCKS 查询并缓存"
 
+msgid "Use MOSDNS query (Not Support Oversea Mode)"
+msgstr "使用 MOSDNS 查询 (不支持海外用户回国模式)"
+
+msgid "Disable IPv6 in MOSDNS query mode"
+msgstr "禁止 MOSDNS 返回 IPv6 记录"
+
+msgid "DNS Query Mode For Shunt Mode"
+msgstr "分流模式下的 DNS 查询模式"
+
+msgid "Anti-pollution DNS Server For Shunt Mode"
+msgstr "分流模式下的访问国外域名 DNS 服务器"
+
+msgid "Use MOSDNS query"
+msgstr "使用 MOSDNS 查询"
+
+msgid "Custom DNS Server for mosdns"
+msgstr "MOSDNS 自定义 DNS 服务器"
+
+msgid "Disable IPv6 In MOSDNS Query Mode (Shunt Mode)"
+msgstr "禁止 MOSDNS 返回 IPv6 记录 (分流模式)"
+
 msgid "DNS Server IP:Port"
-msgstr "DNS服务器 IP:Port"
+msgstr "DNS 服务器 IP:Port"
+
+msgid "Domestic DNS Server"
+msgstr "国内 DNS 服务器"
+
+msgid "Use DNS from WAN"
+msgstr "使用 WAN 下发的 DNS"
+
+msgid "Use DNS from WAN and 114DNS"
+msgstr "使用 WAN 下发的 DNS 和 114DNS"
+
+msgid "Custom DNS Server format as IP:PORT (default: disabled)"
+msgstr "格式为 IP:PORT（默认：禁用）"
 
 msgid "Update time (every day)"
-msgstr "更新时间 (每天)"
+msgstr "更新时间（每天）"
 
 msgid "Auto Update Server subscription, GFW list and CHN route"
-msgstr "自动更新服务器订阅、GFW列表和 CHN路由表"
+msgstr "自动更新服务器订阅、GFW 列表和中国大陆 IP 段"
 
 msgid "Subscribe URL"
-msgstr "SS/SSR/V2/TROJAN订阅URL"
+msgstr "SS/SSR/V2/TROJAN 订阅 URL"
 
 msgid "Subscribe Filter Words"
 msgstr "订阅节点关键字过滤"
@@ -464,19 +619,19 @@ msgid "Interface control"
 msgstr "接口控制"
 
 msgid "WAN IP AC"
-msgstr "WAN IP访问控制"
+msgstr "WAN IP 访问控制"
 
 msgid "WAN White List IP"
-msgstr "不走代理的WAN IP"
+msgstr "不走代理的 WAN IP"
 
 msgid "WAN Force Proxy IP"
-msgstr "强制走代理的WAN IP"
+msgstr "强制走代理的 WAN IP"
 
 msgid "LAN Bypassed Host List"
-msgstr "不走代理的局域网LAN IP"
+msgstr "不走代理的局域网 LAN IP"
 
 msgid "LAN Force Proxy Host List"
-msgstr "全局代理的LAN IP"
+msgstr "全局代理的 LAN IP"
 
 msgid "Router Self AC"
 msgstr "路由器自身代理设置"
@@ -497,7 +652,7 @@ msgid "GFW Custom List"
 msgstr "GFW 用户自定义列表"
 
 msgid "Please refer to the following writing"
-msgstr "每行一个域名，无需写前面的 HTTP(S):// ，提交后即时生效"
+msgstr "每行一个域名，无需写前面的 http(s)://，提交后即时生效"
 
 msgid "Servers subscription and manage"
 msgstr "服务器节点订阅与管理"
@@ -506,28 +661,28 @@ msgid "Through proxy update list, Not Recommended"
 msgstr "通过路由器自身代理更新订阅"
 
 msgid "LAN IP AC"
-msgstr "LAN IP访问控制"
+msgstr "LAN IP 访问控制"
 
 msgid "Game Mode UDP Server"
-msgstr "游戏模式UDP中继服务器"
+msgstr "游戏模式 UDP 中继服务器"
 
 msgid "Game Mode UDP Relay"
-msgstr "游戏模式UDP中继"
+msgstr "游戏模式 UDP 中继"
 
 msgid "Server failsafe auto swith and custom update settings"
-msgstr "服务器节点故障自动切换/广告屏蔽/国内IP段数据库更新设置"
+msgstr "服务器节点故障自动切换/广告屏蔽/中国大陆 IP 段数据库更新设置"
 
 msgid "Support AdGuardHome and DNSMASQ format list"
 msgstr "同时支持 AdGuard Home 和 DNSMASQ 格式的过滤列表"
 
-msgid "Delete All Subscribe Severs"
+msgid "Delete All Subscribe Servers"
 msgstr "删除所有订阅服务器节点"
 
-msgid "Severs Nodes"
+msgid "Servers Nodes"
 msgstr "服务器节点"
 
 msgid "Use Local DNS Service listen port 5335"
-msgstr "使用本机端口为5335的DNS服务"
+msgstr "使用本机端口为 5335 的 DNS 服务"
 
 msgid "Server Node Type"
 msgstr "服务器节点类型"
@@ -536,13 +691,13 @@ msgid "Using incorrect encryption mothod may causes service fail to start"
 msgstr "输入不正确的参数组合可能会导致服务无法启动"
 
 msgid "Game Mode Host List"
-msgstr "增强游戏模式客户端LAN IP"
+msgstr "增强游戏模式客户端 LAN IP"
 
 msgid "Multi Threads Option"
 msgstr "多线程并发转发"
 
 msgid "Auto Threads"
-msgstr "自动（CPU线程数）"
+msgstr "自动（CPU 线程数）"
 
 msgid "1 Thread"
 msgstr "单线程"
@@ -575,13 +730,19 @@ msgid "All Ports"
 msgstr "所有端口（默认）"
 
 msgid "Only Common Ports"
-msgstr "仅常用端口（不走P2P流量到代理）"
+msgstr "仅常用端口（不走 P2P 流量到代理）"
+
+msgid "Custom Ports"
+msgstr "自定义端口"
+
+msgid "Enter Custom Ports"
+msgstr "输入自定义端口"
 
 msgid "Socket Connected"
 msgstr "连接测试"
 
 msgid "Ping Latency"
-msgstr "Ping延迟"
+msgstr "Ping 延迟"
 
 msgid "Bypass Domain List"
 msgstr "不走代理的域名"
@@ -590,12 +751,12 @@ msgid "Black Domain List"
 msgstr "强制走代理的域名"
 
 msgid "Update Subscribe List"
-msgstr "更新订阅URL列表"
+msgstr "更新订阅 URL 列表"
 
 msgid "Update subscribe url list first"
-msgstr "修改订阅URL和节点关键字后，请先点击更新"
+msgstr "修改订阅 URL 和节点关键字后，请先点击更新"
 
-msgid "Update All Subscribe Severs"
+msgid "Update All Subscribe Servers"
 msgstr "更新所有订阅服务器节点"
 
 msgid "Plugin"
@@ -617,7 +778,7 @@ msgid "Upload"
 msgstr "上传"
 
 msgid "No specify upload file."
-msgstr "没有上传证书"
+msgstr "没有上传证书。"
 
 msgid "Current Certificate Path"
 msgstr "当前证书路径"
@@ -691,11 +852,74 @@ msgstr "V2Ray/XRay 协议"
 msgid "Camouflage Type"
 msgstr "伪装类型"
 
+msgid "HTTP Host"
+msgstr "HTTP 主机名"
+
+msgid "HTTP Path"
+msgstr "HTTP 路径"
+
+msgid "WebSocket Host"
+msgstr "WebSocket 主机名"
+
+msgid "WebSocket Path"
+msgstr "WebSocket 路径"
+
+msgid "Max Early Data"
+msgstr "最大前置数据"
+
+msgid "Early Data Header Name"
+msgstr "前置数据标头"
+
+msgid "Httpupgrade Host"
+msgstr "HTTPUpgrade 主机名"
+
+msgid "Httpupgrade Path"
+msgstr "HTTPUpgrade 路径"
+
+msgid "Splithttp Host"
+msgstr "SplitHTTP 主机名"
+
+msgid "Splithttp Path"
+msgstr "SplitHTTP 路径"
+
+msgid "HTTP/2 Host"
+msgstr "HTTP/2 主机名"
+
+msgid "HTTP/2 Path"
+msgstr "HTTP/2 路径"
+
+msgid "gRPC Service Name"
+msgstr "gRPC 服务名称"
+
+msgid "gRPC Mode"
+msgstr "gRPC 模式"
+
+msgid "Initial Windows Size"
+msgstr "初始窗口大小"
+
+msgid "H2/gRPC Health Check"
+msgstr "H2/gRPC 健康检查"
+
+msgid "H2 Read Idle Timeout"
+msgstr "H2 读取空闲超时"
+
+msgid "gRPC Idle Timeout"
+msgstr "gPRC 空闲超时"
+
+msgid "Health Check Timeout"
+msgstr "健康检查超时"
+
+msgid "QUIC Security"
+msgstr "QUIC 加密方式"
+
+msgid "QUIC Key"
+msgstr "QUIC 密钥"
+
 msgid "VideoCall (SRTP)"
-msgstr "视频通话 (SRTP)"
+msgstr "视频通话（SRTP）"
 
 msgid "BitTorrent (uTP)"
-msgstr "BT下载 (uTP)"
+msgstr "BT 下载（uTP）"
 
 msgid "WechatVideo"
 msgstr "微信视频通话"
@@ -703,20 +927,17 @@ msgstr "微信视频通话"
 msgid "DTLS 1.2"
 msgstr "DTLS 1.2 数据包"
 
-msgid "WireGuard"
-msgstr "WireGuard 数据包"
-
 msgid "MTU"
 msgstr "最大传输单元"
 
 msgid "TTI"
 msgstr "传输时间间隔"
 
-msgid "Uplink Capacity"
-msgstr "上行链路容量"
+msgid "Uplink Capacity(Default:Mbps)"
+msgstr "上行链路容量（默认：Mbps）"
 
-msgid "Downlink Capacity"
-msgstr "下行链路容量"
+msgid "Downlink Capacity(Default:Mbps)"
+msgstr "下行链路容量（默认：Mbps）"
 
 msgid "Read Buffer Size"
 msgstr "读取缓冲区大小"
@@ -726,6 +947,39 @@ msgstr "写入缓冲区大小"
 
 msgid "Congestion"
 msgstr "拥塞控制"
+
+msgid "Enabled Kernel virtual NIC TUN(optional)"
+msgstr "启用内核的虚拟网卡 TUN（可选）"
+
+msgid "Virtual NIC TUN of Linux kernel can be used only when system supports and have root permission. If used, IPv6 routing table 1023 is occupied."
+msgstr "需要系统支持且有 root 权限才能使用 Linux 内核的虚拟网卡 TUN，使用后会占用 IPv6 的 1023 号路由表。"
+
+msgid "Local addresses"
+msgstr "本地地址"
+
+msgid "Reserved bytes(optional)"
+msgstr "保留字节（可选）"
+
+msgid "Wireguard reserved bytes."
+msgstr "Wireguard 保留字节。"
+
+msgid "Private key"
+msgstr "私钥"
+
+msgid "Peer public key"
+msgstr "节点公钥"
+
+msgid "Pre-shared key"
+msgstr "预共享密钥"
+
+msgid "Default value 0 indicatesno heartbeat."
+msgstr "默认为 0 表示无心跳。"
+
+msgid "allowedIPs(optional)"
+msgstr "allowedIPs（可选）"
+
+msgid "Wireguard allows only traffic from specific source IP."
+msgstr "Wireguard 仅允许特定源 IP 的流量。"
 
 msgid "Network interface to use"
 msgstr "使用的网络接口"
@@ -742,9 +996,6 @@ msgstr "重置完成"
 msgid "Reset Error"
 msgstr "重置错误"
 
-msgid "Reset pdnsd cache"
-msgstr "重置PDNSD缓存"
-
 msgid "Finger Print"
 msgstr "指纹伪造"
 
@@ -756,3 +1007,60 @@ msgstr "应用"
 
 msgid "Enable Netflix Mode"
 msgstr "启用 Netflix 分流模式"
+
+msgid "TUIC User UUID"
+msgstr "TUIC 用户 uuid"
+
+msgid "TUIC Server IP Address"
+msgstr "TUIC 服务器 IP 地址"
+
+msgid "TUIC User Password"
+msgstr "TUIC 用户密钥"
+
+msgid "UDP relay mode"
+msgstr "UDP 中继模式"
+
+msgid "native UDP characteristics"
+msgstr "原生 UDP 特性"
+
+msgid "lossless UDP relay using QUIC streams"
+msgstr "使用 QUIC 流的无损 UDP 中继"
+
+msgid "Congestion control algorithm"
+msgstr "拥塞控制算法"
+
+msgid "Heartbeat interval(second)"
+msgstr "保活心跳包发送间隔（单位：秒）"
+
+msgid "Timeout for establishing a connection to server(second)"
+msgstr "连接超时时间（单位：秒）"
+
+msgid "Garbage collection interval(second)"
+msgstr "UDP 数据包片残片清理间隔（单位：秒）"
+
+msgid "Garbage collection lifetime(second)"
+msgstr "UDP 数据包残片在服务器的保留时间（单位：秒）"
+
+msgid "Disable SNI"
+msgstr "关闭 SNI 服务器名称指示"
+
+msgid "Enable 0-RTT QUIC handshake"
+msgstr "客户端启用 0-RTT QUIC 连接握手"
+
+msgid "TUIC send window"
+msgstr "发送窗口（无需确认即可发送的最大字节数：默认8Mb*2）"
+
+msgid "TUIC receive window"
+msgstr "接收窗口（无需确认即可接收的最大字节数：默认8Mb）"
+
+msgid "Dual-stack Listening Socket"
+msgstr "双栈 Socket 监听"
+
+msgid "If this option is not set, the socket behavior is platform dependent."
+msgstr "如果未设置此选项，则 Socket 行为依赖于平台。"
+
+msgid "Maximum packet size the socks5 server can receive from external"
+msgstr "socks5 服务器可以从外部接收的最大数据包大小（单位：字节）"
+
+msgid "Disable ChinaDNS-NG"
+msgstr "直通模式（禁用 ChinaDNS-NG）"
